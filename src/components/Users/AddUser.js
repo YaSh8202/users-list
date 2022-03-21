@@ -5,7 +5,7 @@ import Button from "../UI/Button";
 import ErrorModal from "../UI/ErrorModal";
 
 
-const AddUser = (props) => {
+const AddUser = (props) => { 
 
   const nameInputRef = useRef();
   const ageInputRef = useRef();
@@ -57,7 +57,7 @@ const AddUser = (props) => {
             id="username"
             type="text"
             ref={nameInputRef}
-          />
+          />{/* This component is now called uncontolled component because here we are using refs to change its value, and now, it is not controlled by react */}
           <label htmlFor="age">Age (Years) </label>
           <input
             id="age"
